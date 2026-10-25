@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #f8fafc;
+    --text-main: #1e293b;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+  }
+
+  .dark {
+    --bg-main: #0f172a;
+    --text-main: #e2e8f0;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  .font-mono, code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Water pouring stream keyframes */
+@keyframes waterFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-water-stream {
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.9) 0%, rgba(2, 132, 199, 0.95) 50%, rgba(3, 105, 161, 1) 100%);
+  background-size: 100% 200%;
+  animation: waterFlow 0.8s linear infinite;
+}
+
+.animate-laser-scan {
+  animation: pulseGlow 1.8s ease-in-out infinite;
+}

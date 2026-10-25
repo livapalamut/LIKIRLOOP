@@ -1,0 +1,6 @@
+{
+  "name": "LıkırLoop - Döngüsel Akıllı Su Dolum & Matara İstasyonu",
+  "description": "Kampüs ve KYK yurtları için temassız, temiz su ve sıfır atık sağlayan Edge AI destekli akıllı matara dolum istasyonu simülasyonu ve telemetri paneli.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
